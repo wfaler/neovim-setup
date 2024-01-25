@@ -20,6 +20,7 @@ git clone git@github.com:wfaler/neovim-setup.git ~/.config/nvim/lua/custom
 Open `nvim`, run:
 ```
 :MasonInstallAll
+:TSInstall terraform
 ```
 
 Done!
@@ -28,3 +29,12 @@ Currently supports:
 
 * Golang (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=i04sSQjd-qo)
 * Python (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=4BnVeOUeZxc)
+* Terraform
+
+## TODO
+* Copilot
+* Scala (metals-nvim)
+* Improve Terraform
+* Run tests (maybe Neotest?)
+* Rust
+* Gradle + Kotlin

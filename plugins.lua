@@ -27,6 +27,10 @@ local plugins = {
       return require "custom.configs.null-ls"
     end,
   },
+  {
+    "github/copilot.vim",
+   -- url = "git@github.com:github/copilot.vim.git",
+  }
 }
 
 return plugins
