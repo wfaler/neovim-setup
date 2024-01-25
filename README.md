@@ -30,11 +30,10 @@ Currently supports:
 * Golang (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=i04sSQjd-qo)
 * Python (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=4BnVeOUeZxc)
 * Terraform
+* Copilot
 
 ## TODO
-* Copilot
-* Scala (metals-nvim)
-* Improve Terraform
 * Run tests (maybe Neotest?)
+* Scala (metals-nvim)
 * Rust
 * Gradle + Kotlin
