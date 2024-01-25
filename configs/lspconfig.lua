@@ -1,9 +1,10 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach 
+local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
 
+-- Golang config
 lspconfig.gopls.setup{
   on_attach = on_attach,
   capabilities = capabilities,
@@ -28,3 +29,18 @@ lspconfig.gopls.setup{
     },
   },
 }
+-- Python config
+lspconfig.pyright.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"python"}
+})
+-- Terraform
+lspconfig.terraformls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+lspconfig.tflint.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
