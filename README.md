@@ -14,6 +14,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 Add these customizations, by:
 ```
+rm -rf ~/.config/nvim/lua/custom
 git clone git@github.com:wfaler/neovim-setup.git ~/.config/nvim/lua/custom
 ```
 
