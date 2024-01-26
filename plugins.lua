@@ -10,6 +10,7 @@ local plugins = {
         "black",
         "terraform-ls", -- terraform
         "tflint",
+        "typescript-language-server", -- typescript
       },
     },
   },

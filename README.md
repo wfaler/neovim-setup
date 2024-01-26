@@ -31,6 +31,7 @@ Currently supports:
 * Python (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=4BnVeOUeZxc)
 * Terraform
 * Copilot
+* Typescript/Javascript with LSP
 
 ## TODO
 * Run tests (maybe Neotest?)
