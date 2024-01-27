@@ -43,6 +43,18 @@ local plugins = {
       require "custom.configs.vim-test"
     end,
   },
+  {
+    "scalameta/nvim-metals",
+    ft = {"scala", "sbt"},
+    opts = function()
+      local fn = require "custom.configs.metals-opts"
+      return fn()
+    end,
+    config = function(self, metals_config)
+      local fn = require "custom.configs.metals-config"
+      fn(self, metals_config)
+    end,
+  }
 }
 
 return plugins
