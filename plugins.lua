@@ -28,14 +28,21 @@ local plugins = {
       return require "custom.configs.null-ls"
     end,
   },
- {"github/copilot.vim",
-  lazy = false,
-  config = function()
-    vim.g.copilot_no_tab_map = true;
-    vim.g.copilot_assume_mapped = true;
-    vim.g.copilot_tab_fallback = "";
-  end
- },
+  {"github/copilot.vim",
+    lazy = false,
+    config = function()
+      vim.g.copilot_no_tab_map = true;
+      vim.g.copilot_assume_mapped = true;
+      vim.g.copilot_tab_fallback = "";
+    end
+  },
+  {
+    "vim-test/vim-test",
+    lazy = false,
+    config = function()
+      require "custom.configs.vim-test"
+    end,
+  },
 }
 
 return plugins

@@ -33,9 +33,9 @@ Currently supports:
 * Terraform
 * Copilot
 * Typescript/Javascript with LSP
+* Running tests with vim-test
 
 ## TODO
-* Run tests (maybe Neotest?)
 * Scala (metals-nvim)
 * Rust
 * Gradle + Kotlin
