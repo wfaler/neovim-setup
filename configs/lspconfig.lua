@@ -49,7 +49,7 @@ lspconfig.tsserver.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
-lspconfig.metals.setup {
+lspconfig.metals.setup({
   -- Metals-specific configuration
   on_attach = on_attach,
   capabilities = capabilities,
@@ -58,4 +58,4 @@ lspconfig.metals.setup {
     showInferredType = true,
     -- other Metals settings
   }
-}
+})
