@@ -34,8 +34,8 @@ Currently supports:
 * Copilot
 * Typescript/Javascript with LSP
 * Running tests with vim-test
+* Scala (metals-nvim)
 
 ## TODO
-* Scala (metals-nvim)
 * Rust
 * Gradle + Kotlin
