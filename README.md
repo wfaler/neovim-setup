@@ -28,8 +28,8 @@ Done!
 
 Currently supports:
 
-* Golang (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=i04sSQjd-qo)
-* Python (excluding tests, debug, for debug, view: https://www.youtube.com/watch?v=4BnVeOUeZxc)
+* Golang (excluding debugger, for debug, view: https://www.youtube.com/watch?v=i04sSQjd-qo)
+* Python (excluding debugger, for debug, view: https://www.youtube.com/watch?v=4BnVeOUeZxc)
 * Scala (metals-nvim)
 * Typescript/Javascript with LSP
 * Terraform
