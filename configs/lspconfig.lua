@@ -51,6 +51,8 @@ lspconfig.tsserver.setup({
 })
 lspconfig.metals.setup {
   -- Metals-specific configuration
+  on_attach = on_attach,
+  capabilities = capabilities,
   settings = {
     showImplicitArguments = true,
     showInferredType = true,
