@@ -22,7 +22,11 @@ Open `nvim`, run:
 ```
 :MasonInstallAll
 :TSInstall terraform
+:TSInstall go 
+:TSInstall python 
+:TSInstall typescript 
 ```
+TSInstall is required for Neotest to discover tests per language with Treesitter
 
 Done!
 
@@ -34,7 +38,7 @@ Currently supports:
 * Typescript/Javascript with LSP
 * Terraform
 * Copilot
-* Running tests with vim-test
+* Running tests with neotest, vim-test
 
 ## TODO
 * Rust

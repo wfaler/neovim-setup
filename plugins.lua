@@ -37,16 +37,25 @@ local plugins = {
     end
   },
   {
-    "vim-test/vim-test",
-    lazy = false,
-    config = function()
-      require "custom.configs.vim-test"
-    end,
-  },
-  {
     "scalameta/nvim-metals",
     ft = {"scala", "sbt"},
-  }
+  },
+  {
+    "nvim-neotest/neotest",
+    ft = {"go", "python", "scala", "javascript", "typescript", "javascriptreact", "typescriptreact"},
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-neotest/neotest-go",
+      "nvim-neotest/neotest-python",
+      "stevanmilic/neotest-scala",
+      "nvim-neotest/neotest-jest",
+    },
+    config = function()
+      require "custom.configs.neotest"
+    end,
+  },
 }
 
 return plugins
