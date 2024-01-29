@@ -13,6 +13,7 @@ local plugins = {
         "terraform",
         "dockerfile",
         "scala",
+        "rust",
         -- web dev 
         "html",
         "css",
@@ -20,11 +21,8 @@ local plugins = {
         "typescript",
         "tsx",
         "json",
-        -- "vue", "svelte",
-
-       -- low level
+        -- low level
         "c",
-        "zig"
       },
     },
   },
