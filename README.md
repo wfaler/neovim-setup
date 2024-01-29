@@ -21,12 +21,7 @@ git clone git@github.com:wfaler/neovim-setup.git ~/.config/nvim/lua/custom
 Open `nvim`, run:
 ```
 :MasonInstallAll
-:TSInstall terraform
-:TSInstall go 
-:TSInstall python 
-:TSInstall typescript 
 ```
-TSInstall is required for Neotest to discover tests per language with Treesitter
 
 Done!
 
@@ -38,7 +33,7 @@ Currently supports:
 * Typescript/Javascript with LSP
 * Terraform
 * Copilot
-* Running tests with neotest, vim-test
+* Running tests with neotest (requires treesitter grammar installed for each language)
 
 ## TODO
 * Rust

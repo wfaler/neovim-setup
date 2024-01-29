@@ -1,5 +1,34 @@
 local plugins = {
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults 
+        "vim",
+        "lua",
+        "python",
+        "go",
+        "bash",
+        "yaml",
+        "terraform",
+        "dockerfile",
+        "scala",
+        -- web dev 
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+        -- "vue", "svelte",
+
+       -- low level
+        "c",
+        "zig"
+      },
+    },
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
