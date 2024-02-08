@@ -31,6 +31,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls", -- go
+        "goimports", -- go
         "pyright", -- python
         "ruff",
         "mypy",
