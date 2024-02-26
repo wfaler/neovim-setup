@@ -14,6 +14,7 @@ local plugins = {
         "dockerfile",
         "scala",
         "rust",
+        "templ",
         -- web dev 
         "html",
         "css",
@@ -31,6 +32,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls", -- go
+        "templ", -- templ
         "goimports", -- go
         "pyright", -- python
         "ruff",
@@ -39,6 +41,8 @@ local plugins = {
         "terraform-ls", -- terraform
         "tflint",
         "typescript-language-server", -- typescript
+        "html-lsp",
+        "htmx-lsp",
       },
     },
   },
