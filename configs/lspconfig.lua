@@ -9,7 +9,7 @@ lspconfig.gopls.setup{
   on_attach = on_attach,
   capabilities = capabilities,
   cmd = {"gopls"},
-  filetypes = {"go", "gomod", "gowork", "gotmpl", "templ"},
+  filetypes = {"go", "gomod", "gowork", "gotmpl"},
   root_dir = util.root_pattern("go.work", "go.mod", ".git"),
   settins = {
     gopls = {
@@ -67,6 +67,12 @@ lspconfig.html.setup({
 })
 
 lspconfig.templ.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "templ" },
+})
+
+lspconfig.htmx.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { "templ" },
