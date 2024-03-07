@@ -29,7 +29,7 @@ Currently supports:
 
 * Golang (excluding debugger, for debug, view: https://www.youtube.com/watch?v=i04sSQjd-qo)
 * Python (excluding debugger, for debug, view: https://www.youtube.com/watch?v=4BnVeOUeZxc)
-* Scala (metals-nvim), requires Java, SBT & Coursier installed
+* Scala (metals-nvim), requires Java, SBT & Coursier installed, may require `coursier install metals`
 * Typescript/Javascript with LSP
 * Terraform
 * Copilot
