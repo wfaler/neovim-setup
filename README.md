@@ -34,7 +34,7 @@ Currently supports:
 * Terraform
 * Copilot
 * Running tests with neotest (requires treesitter grammar installed for each language)
-* Vue 3 (requires  npm install -g @vue/typescript-plugin - as this does not seem to be available through Mason)
+* Vue 3 (requires  npm install  @vue/typescript-plugin in each project as a dev dependency - as this does not seem to be available through Mason)
 
 ## TODO
 * Rust
