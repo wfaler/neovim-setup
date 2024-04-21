@@ -22,6 +22,7 @@ local plugins = {
         "typescript",
         "tsx",
         "json",
+        "vue",
         -- low level
         "c",
       },
@@ -41,6 +42,7 @@ local plugins = {
         "terraform-ls", -- terraform
         "tflint",
         "typescript-language-server", -- typescript
+        "vue-language-server",
         "html-lsp",
         "htmx-lsp",
       },
