@@ -85,6 +85,7 @@ local plugins = {
       "nvim-neotest/neotest-python",
       "stevanmilic/neotest-scala",
       "nvim-neotest/neotest-jest",
+      "marilari88/neotest-vitest",
     },
     config = function()
       require "custom.configs.neotest"

@@ -24,6 +24,9 @@ require("neotest").setup {
         return vim.fn.getcwd()
       end,
     },
+    require "neotest-vitest" {
+     -- env = { VITE_TEST = true },
+    },
     require "neotest-python" {
       runner = "pytest",
     },
