@@ -10,6 +10,7 @@ local plugins = {
         "go",
         "bash",
         "yaml",
+        "toml",
         "terraform",
         "dockerfile",
         "scala",
@@ -25,6 +26,7 @@ local plugins = {
         "vue",
         -- low level
         "c",
+        "rust",
       },
     },
   },
@@ -76,7 +78,7 @@ local plugins = {
   },
   {
     "nvim-neotest/neotest",
-    ft = {"go", "python", "scala", "javascript", "typescript", "javascriptreact", "typescriptreact"},
+    ft = {"go", "python", "scala", "javascript", "typescript", "javascriptreact", "typescriptreact", "rust"},
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
@@ -86,9 +88,22 @@ local plugins = {
       "stevanmilic/neotest-scala",
       "nvim-neotest/neotest-jest",
       "marilari88/neotest-vitest",
+      -- "rouge8/neotest-rust",
     },
     config = function()
       require "custom.configs.neotest"
+    end,
+  },
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^4', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  {
+    'saecki/crates.nvim',
+    tag = 'stable',
+    config = function()
+        require('crates').setup()
     end,
   },
   {
