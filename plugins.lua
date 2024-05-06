@@ -45,6 +45,7 @@ local plugins = {
         "tflint",
         "typescript-language-server", -- typescript
         "vue-language-server",
+        "prettier",
         "html-lsp",
         "htmx-lsp",
       },
@@ -59,7 +60,7 @@ local plugins = {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = "go",
+    ft = {"go", "python", "javascript", "typescript", "javascriptreact", "typescriptreact", "vue"},
     opts = function()
       return require "custom.configs.null-ls"
     end,

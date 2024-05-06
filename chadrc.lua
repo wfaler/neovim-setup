@@ -11,13 +11,6 @@ vim.api.nvim_create_user_command('Prettier', function()
     vim.api.nvim_win_set_cursor(0, cursor_pos)  -- Restore cursor position
 end, {})
 
-vim.api.nvim_create_augroup("fmt", { clear = true })
-vim.api.nvim_create_autocmd("BufWritePre", {
-    group = "fmt",
-    pattern = {"*.js", "*.ts", "*.jsx", "*.tsx", "*.vue"},
-    command = "Prettier",
-})
-
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
 
