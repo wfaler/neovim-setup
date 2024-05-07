@@ -63,6 +63,16 @@ lspconfig.tflint.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+-- typescript & vue
+local function find_plugin_in_node_modules(plugin_name)
+  local project_root = vim.fn.getcwd()
+  local plugin_path = vim.fn.glob(project_root .. '/node_modules/' .. plugin_name)
+  if vim.fn.empty(plugin_path) == 1 then
+    -- Fallback to a global path or error handling
+    return '/opt/homebrew/lib/node_modules/' .. plugin_name
+  end
+  return plugin_path
+end
 
 lspconfig.tsserver.setup({
   on_attach = on_attach,
@@ -71,7 +81,7 @@ lspconfig.tsserver.setup({
     plugins = {
       {
         name = '@vue/typescript-plugin',
-        location = '/opt/homebrew/lib/node_modules/@vue/typescript-plugin',
+        location = find_plugin_in_node_modules('@vue/typescript-plugin'),
         languages = {"vue"},
       },
     },
