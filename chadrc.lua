@@ -14,4 +14,9 @@ end, {})
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
 
+M.ui = {
+   theme = "catppuccin",
+   catppuccin_flavour = "macchiato"
+}
+--
 return M
